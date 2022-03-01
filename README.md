@@ -92,6 +92,8 @@ scene can vary from run to run.
 Using `n-imgs=60` with 24G of VRAM, some test scenes can cause OOM errors that are resolved by
 changing the random seed or reducing `n-imgs` or `cropsize`.
 
+[Here](https://drive.google.com/drive/folders/1s-i_6WiwJ9lsM48vxaTbzXsRLJfJXlrc?usp=sharing) are inference results using the provided pre-trained weights, `n-imgs=60`, and `cropsize=64`. The reduced test-time crop size caused a slight F-score increase to 0.656 (the paper reports 0.641).
+
 ## Evaluation
 
 ```
