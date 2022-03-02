@@ -34,7 +34,8 @@ if __name__ == "__main__":
             "-q",
             os.path.join(logger.experiment.dir, "code.zip"),
             "config.yml",
-            *glob.glob("*.py"),
+            *glob.glob("vortx/*.py"),
+            *glob.glob("scripts/*.py"),
         ]
     )
     
