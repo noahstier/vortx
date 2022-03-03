@@ -1,7 +1,6 @@
 # VoRTX: Volumetric 3D Reconstruction With Transformers for Voxelwise View Selection and Fusion
 
-## [Project Page](https://noahstier.github.io/vortx/) | [Paper](https://arxiv.org/abs/2112.00236) | [Weights](https://drive.google.com/file/d/1I4qJplvs95b3mOnaEfCvF1vhnyEqJ0f9/view)
-| [ScanNet Test Results](https://drive.google.com/drive/folders/1s-i_6WiwJ9lsM48vxaTbzXsRLJfJXlrc?usp=sharing)
+## [Project Page](https://noahstier.github.io/vortx/) | [Paper](https://arxiv.org/abs/2112.00236) | [Weights](https://drive.google.com/file/d/1I4qJplvs95b3mOnaEfCvF1vhnyEqJ0f9/view) | [ScanNet Test Results](https://drive.google.com/drive/folders/1s-i_6WiwJ9lsM48vxaTbzXsRLJfJXlrc?usp=sharing)
 
 VoRTX is a deep learning model for 3D reconstruction from posed RGB images, using transformers for multi-view fusion.
 
