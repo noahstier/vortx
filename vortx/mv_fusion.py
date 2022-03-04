@@ -82,8 +82,4 @@ def mv_fusion_mean(features, valid_mask):
     pooled_features = (
         torch.sum(features * valid_mask[..., None], dim=0) / weights[:, None]
     )
-    if torch.any(torch.isnan(pooled_features)):
-        import ipdb
-
-        ipdb.set_trace()
     return pooled_features
