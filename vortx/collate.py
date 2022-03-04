@@ -1,3 +1,9 @@
+# original vesion from https://github.com/mit-han-lab/torchsparse/blob/master/torchsparse/utils/collate.py
+# Copyright (c) 2020-2021 TorchSparse Contributors
+
+# Modified by Noah Stier
+
+
 import numpy as np
 import torch
 import torchsparse
@@ -15,7 +21,7 @@ def sparse_collate_tensors(tensors):
 
     feats = torch.cat([t.F for t in tensors], dim=0)
     if feats.dtype is not torch.float32:
-        raise Exception("feats gotta be float32")
+        raise Exception("features should be float32")
     return torchsparse.SparseTensor(feats, coords)
 
 

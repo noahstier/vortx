@@ -1,3 +1,7 @@
+# original version from https://github.com/ardaduz/deep-video-mvs
+# Copyright (c) 2020 Arda Duzceker
+
+# Modified by Alex Rich
 # From 3DVNet:
 # https://github.com/alexrich021/3dvnet/blob/main/data_preprocess/preprocess_scannet.py
 

@@ -14,6 +14,8 @@
 
 #  Originating Author: Zak Murez (zak.murez.com)
 
+#  Modified by Noah Stier
+
 import argparse
 import glob
 import json
