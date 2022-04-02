@@ -1,4 +1,4 @@
-# from NeuralRecon:
+# Original version from NeuralRecon:
 # https://github.com/zju3dv/NeuralRecon/blob/master/tools/tsdf_fusion/generate_gt.py
 
 #                                  Apache License
@@ -316,6 +316,8 @@ def save_tsdf_full(args, scene_path, cam_intr, depth_list, cam_pose_list, color_
 
     for l in range(args.num_layers):
         tsdf_vol, color_vol, weight_vol = tsdf_vol_list[l].get_volume()
+        tsdf_vol[tsdf_vol < 1] *= -1
+        tsdf_vol[(tsdf_vol == 1) & (weight_vol > 0)] = -1
         np.savez_compressed(os.path.join(args.save_path, scene_path, 'full_tsdf_layer{}'.format(str(l))), tsdf_vol)
 
     if save_mesh:
